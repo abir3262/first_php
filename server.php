@@ -13,6 +13,7 @@ if( $_SERVER["REQUEST_METHOD"]== "POST"){
     $address= htmlspecialchars($_POST["address"]);
 
     $sql="INSERT INTO `user`(`name`, `age`, `address`) VALUES ('$name', '$age', '$address')";
+    
 
     $conn->query($sql);
     echo "<h1>Data added successfully</h1>";
